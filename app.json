@@ -1,0 +1,33 @@
+{
+  "pages": [
+    "pages/brief/brief",
+    "pages/appointment/appointment",
+    "pages/appointment/admin/admin",
+    "pages/appointment/trainee/trainee",
+    "pages/contact/contact"
+  ],
+  "window": {
+    "backgroundTextStyle": "light",
+    "navigationBarBackgroundColor": "#D3D7D9",
+    "navigationBarTitleText": "西安鹏城驾校",
+    "navigationBarTextStyle": "black"
+  },
+  "tabBar": {
+    "backgroundColor": "#D3D7D9",
+    "list": [
+      {
+        "pagePath": "pages/brief/brief",
+        "text": "首页"
+      },
+      {
+        "pagePath": "pages/appointment/appointment",
+        "text": "预约驾驶"
+      },
+      {
+        "pagePath": "pages/contact/contact",
+        "text": "联系我们"
+      }
+    ]
+  },
+  "sitemapLocation": "sitemap.json"
+}

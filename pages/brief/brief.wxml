@@ -1,0 +1,80 @@
+<!--pages/brief/brief.wxml-->
+
+<view class="container">
+  <view class="title">
+    <text >欢迎来到西安鹏城驾校</text>
+  </view>
+  
+  <swiper class="loop-image" indicator-dots='true' autoplay='true' interval='4000'>
+    <swiper-item>
+      <image src="../src/pic/1.jpg"></image>
+    </swiper-item>
+    <swiper-item>
+      <image src="../src/pic/2.jpg"></image>
+    </swiper-item>
+    <swiper-item>
+      <image src="../src/pic/3.jpg"></image>
+    </swiper-item>
+    <swiper-item>
+      <image src="../src/pic/4.jpg"></image>
+    </swiper-item>
+  </swiper>
+
+  <view class="normal_title">
+    <text >鹏城驾校简介</text>
+  </view>
+  
+  <view class="driver_school_brief">
+    <text>
+      成立于一九九九年，总部位于中国福建福州。网龙各项经济指标均位居国内同行业前列，跻身福布斯全球企业2,000强，是国家规划布局的重点软件企业、国家文化产业示范基地、国家文化出口重点企业，连续三年荣膺全国文化企业30 强，入选《福布斯》中文版「中国潜力企业」高成长上市企业百强榜单第三名，连续六年跻身国家工信部发布的「中国互联网企业百强榜」。此外，网龙还被纳入恒生综合大中型股指数，深港通和沪港通成份股。网龙现有员工6,100人，两次荣获《财富》杂志评选的“卓越雇主——中国最适宜工作的公司”。
+    </text>
+  </view>
+  
+  <view class="normal_title">
+    <text >相关荣誉</text>
+  </view>
+  
+  <swiper class="loop-image" indicator-dots='true' autoplay='true' interval='4000'>
+    <swiper-item>
+      <image src="../src/pic/1.jpg"></image>
+    </swiper-item>
+    <swiper-item>
+      <image src="../src/pic/2.jpg"></image>
+    </swiper-item>
+    <swiper-item>
+      <image src="../src/pic/3.jpg"></image>
+    </swiper-item>
+    <swiper-item>
+      <image src="../src/pic/4.jpg"></image>
+    </swiper-item>
+  </swiper>
+  
+    <view class="normal_title">
+    <text >优秀学员</text>
+    </view>
+
+    <view class="pic-array">
+      <image src="../src/pic/5.jpg"></image>
+      <image src="../src/pic/1.jpg"></image>
+      <image src="../src/pic/1.jpg"></image>
+      <image src="../src/pic/5.jpg"></image>
+      <image src="../src/pic/1.jpg"></image>
+      <image src="../src/pic/1.jpg"></image>
+    </view>
+
+   <view class="normal_title">
+    <text >资深教练</text>
+   </view>
+
+    <view class="pic-array">
+      <image src="../src/pic/5.jpg"></image>
+      <image src="../src/pic/1.jpg"></image>
+      <image src="../src/pic/1.jpg"></image>
+      <image src="../src/pic/2.jpg"></image>
+      <image src="../src/pic/1.jpg"></image>
+      <image src="../src/pic/2.jpg"></image>
+    </view>
+  
+
+
+</view>

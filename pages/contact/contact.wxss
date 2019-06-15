@@ -1,0 +1,35 @@
+/* pages/contact/contact.wxss */
+
+.container{
+  height: 100%;
+  padding-top: 4rpx;
+  display: flex;
+  flex-direction: column;
+}
+.title{
+  text-align:center;
+  width: 100%;
+  font-weight:bolder;
+  padding-bottom: 30rpx;
+  margin-bottom: 30rpx;
+  font-size: 35rpx;
+}
+.touch_one{
+  margin-bottom: 20rpx;
+  width: 96%;
+  background-color: #D3D7D9; 
+  display: flex;
+  flex-direction: column;
+  font-size: 30rpx;
+}
+.touch_one_detail{
+  margin-top: 20rpx;
+  padding-left: 20rpx;
+  padding-bottom: 20rpx;
+  display: flex;
+  flex-direction: row;
+}
+.touch_one_detail text{
+  margin-top: 10rpx;
+  margin-right: 30rpx;
+}

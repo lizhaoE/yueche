@@ -1,0 +1,27 @@
+<!--pages/contact/contact.wxml-->
+<view class="container">
+  <view class="title">
+    <text >联系我们</text>
+  </view>
+  
+  <block wx:for="{{person}}" data-item="item" wx:key="id" >
+  <view class="touch_one">
+    <!--联系人1-->
+    <view class="touch_one_detail">
+      <text selectable='true'>职务:</text>
+      <text selectable='true'>{{item.job}}</text>
+    </view>
+    <view class="touch_one_detail">
+      <text selectable='true'>联系人:</text>
+      <text selectable='true'>{{item.touch}}</text>
+    </view>
+    <view class="touch_one_detail">
+      <text selectable='true'>咨询电话:</text>
+      <text selectable='true'>{{item.phone}}</text>
+    </view>
+  </view>
+  </block>
+
+
+</view>
+
