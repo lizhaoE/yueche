@@ -5,22 +5,91 @@ Page({
    * 页面的初始数据
    */
   data: {
-    listData: [
-      { "code": "01", "text": "text1", "type": "type1" },
-      { "code": "02", "text": "text2", "type": "type2" },
-      { "code": "03", "text": "text3", "type": "type3" },
-      { "code": "04", "text": "text4", "type": "type4" },
-      { "code": "05", "text": "text5", "type": "type5" },
-      { "code": "06", "text": "text6", "type": "type6" },
-      { "code": "07", "text": "text7", "type": "type7" }
-    ]
+
   },
 
+  execGetStorageAndRender: function () {  //从缓存获取数据并渲染页面
+    var _this = this;
+    wx.getStorage({
+      key: 'appoint_list',
+      success: function (res) {
+        //console.log(res)
+        _this.setData({                  //从缓存获取成功执行渲染
+          appoint_list: res.data,
+        })
+      },
+      fail: function (res) {             //从缓存获取失败或未查询到时执行渲染
+
+      },
+    })
+
+  },
+
+  //长按取消预约
+  longPressDeleteAppoint: function (e) {
+    var that = this;
+    console.log(e.currentTarget.dataset.appointid);
+    wx.showModal({
+      title: '提醒',
+      content: '确定后你将删除本预约！',
+      success: function (res) {
+        if (res.confirm) { //判断用户是否点击了确定
+
+        }
+      }
+    })
+  },
+  //预约详情
+  tapAppointDetail: function (e) {
+    var that = this;
+    var appointid = e.currentTarget.dataset.appointid
+    console.log(e.currentTarget.dataset.appointid);
+    wx.showModal({
+      title: '提醒',
+      content: '查看详情',
+      success: function (res) {
+        if (res.confirm) { //判断用户是否点击了确定
+          wx.navigateTo({
+            url: 'traineedetail/traineedetail?appointid='+appointid,
+          })
+        }
+      }
+    })
+  },
+
+
+  formSubmit: function (e) {
+    console.log(e.detail.value.appointtime)
+    console.log(e.detail.value.address)
+    console.log(e.detail.value.appointnum)
+    var that = this;
+    var appointtime = e.detail.value.appointtime;
+    var address = e.detail.value.address;
+    var appoint = e.detail.value.appointnum;
+      // wx.request({
+      //   method: "POST",
+      //   url: "",
+      //   data: {
+      //     'time': appointtime,
+      //     'address': address,
+      //     'appointnum': appointnum
+      //   },
+      //   header: {
+      //     'content-type': 'application/json'
+      //   },
+      //   success: function (res) {
+      //     wx.showToast({
+      //       title: '保存成功',
+      //       duration: 2000
+      //     })
+      //   }
+      // })
+  },
   /**
    * 生命周期函数--监听页面加载
    */
   onLoad: function (options) {
-
+    this.execGetStorageAndRender()
   },
 
   /**

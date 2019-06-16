@@ -1,0 +1,36 @@
+/* pages/appointment/traineedetail/traineedetail.wxss */
+.container{
+  padding-top: 20rpx;
+  display: flex;
+  flex-direction: column;
+}
+.title{
+  height: 50rpx;
+  text-align:center;
+  width: 100%;
+  font-weight:bolder;
+}
+
+.container_grip{
+  box-shadow: 0px 0px 0px 2px rgb(232, 232, 235);
+  display: flex;
+  align-items: left;
+  flex-direction: column;
+  margin-top: 30rpx;
+  width: 650rpx;
+  background-color: #F7F7FA;
+  padding-bottom: 10px;
+  padding-top: 10px;
+}
+.container_grip button{
+  height: 60rpx;
+  margin-top: 20rpx;
+  line-height: 60rpx;
+}
+.list{
+margin-left: 20rpx;
+margin-bottom: 20rpx;
+}
+.list-detail{
+  margin-left: 50rpx;
+}

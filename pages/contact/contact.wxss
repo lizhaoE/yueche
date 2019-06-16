@@ -2,7 +2,7 @@
 
 .container{
   height: 100%;
-  padding-top: 4rpx;
+  padding-top: 20rpx;
   display: flex;
   flex-direction: column;
 }

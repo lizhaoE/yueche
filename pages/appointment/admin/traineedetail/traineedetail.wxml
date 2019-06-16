@@ -1,0 +1,36 @@
+<!--pages/appointment/traineedetail/traineedetail.wxml-->
+<view class="container">
+  <view class="title">
+    <text >驾车预约管理系统(管理员)</text>
+  </view>
+
+
+<block wx:for="{{appoint_list.traineeDetail}}" wx:for-item="item"  wx:key="key" >
+  <view class="container_grip" >
+    <view class="list"> 
+      <text>姓名:</text>
+      <text class="list-detail" >{{item.name}}</text>
+    </view>
+
+    <view  class="list">
+      <text>电话:</text>
+      <text class="list-detail">{{item.tel}}</text>
+    </view>
+
+  </view>
+
+ </block>
+  
+    
+
+
+
+ 
+
+</view>
+
+
+
+
+
+

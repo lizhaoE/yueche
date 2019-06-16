@@ -3,6 +3,7 @@
     "pages/brief/brief",
     "pages/appointment/appointment",
     "pages/appointment/admin/admin",
+    "pages/appointment/admin/traineedetail/traineedetail",
     "pages/appointment/trainee/trainee",
     "pages/contact/contact"
   ],

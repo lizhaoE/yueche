@@ -4,12 +4,13 @@
 		"ignore": []
 	},
 	"setting": {
-		"urlCheck": true,
+		"urlCheck": false,
 		"es6": true,
 		"postcss": true,
 		"minified": true,
 		"newFeature": true,
-		"autoAudits": false
+		"autoAudits": false,
+		"checkInvalidKey": true
 	},
 	"compileType": "miniprogram",
 	"libVersion": "2.7.1",
@@ -39,7 +40,7 @@
 			"list": []
 		},
 		"miniprogram": {
-			"current": 3,
+			"current": 6,
 			"list": [
 				{
 					"id": -1,
@@ -67,6 +68,27 @@
 					"name": "预约-学员",
 					"pathName": "pages/appointment/trainee/trainee",
 					"query": "",
+					"scene": null
+				},
+				{
+					"id": 4,
+					"name": "学员详情",
+					"pathName": "pages/appointment/admin/traineedetail/traineedetail",
+					"query": "",
+					"scene": null
+				},
+				{
+					"id": -1,
+					"name": "学员详情",
+					"pathName": "pages/appointment/admin/traineedetail/traineedetail?appointid=2",
+					"query": "",
+					"scene": null
+				},
+				{
+					"id": -1,
+					"name": "学员详情",
+					"pathName": "pages/appointment/admin/traineedetail/traineedetail",
+					"query": "appointid=2",
 					"scene": null
 				}
 			]

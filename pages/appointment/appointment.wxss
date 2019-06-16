@@ -1,6 +1,6 @@
 /* pages/appointment/appointment.wxss */
 .container{
-  padding-top: 4px;
+  padding-top: 20rpx;
   display: flex;
   flex-direction: column;
   

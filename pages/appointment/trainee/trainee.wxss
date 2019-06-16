@@ -1,6 +1,6 @@
 /* pages/appointment/appointment/trainee/trainee.wxss */
 .container{
-  padding-top: 4px;
+  padding-top: 20rpx;
   display: flex;
   flex-direction: column;
 }
@@ -11,42 +11,29 @@
   font-weight:bolder;
 }
 
-.table {
-  font-size: 30rpx;
-  border: 2px solid #D3D7D9;
-  width: 97%;
-  margin-top: 60rpx;
-}
-.tr {
+.container_grip{
+  box-shadow: 0px 0px 0px 2px rgb(232, 232, 235);
   display: flex;
-  width: 100%;
+  align-items: left;
+  flex-direction: column;
+  margin-top: 30rpx;
+  width: 650rpx;
+  background-color: #F7F7FA;
+  padding-bottom: 10px;
+  padding-top: 10px;
+}
+.list{
+margin-left: 20rpx;
+margin-bottom: 20rpx;
+}
+.list-detail{
+  margin-left: 50rpx;
+}
+.container_grip button{
   height: 60rpx;
-  justify-content: center;
-  align-items: center;
+  line-height: 60rpx;
 }
-.td {
-    width:40%;
-    justify-content: center;
-    text-align: center;
-    display: flex;
-    align-items: center;
-}
-
-.th {
-  width: 40%;
-  justify-content: center;
-  display: flex;
-  align-items: center;
-  font-weight:bolder;
-}
-
-.bg-w{
-  background: white;
-}
-.bg-g{
-  background: #D3D7D9;
-}
-.tr image{
-  height: 40rpx;
-  width: 40rpx;
+.button-appoint{
+ margin-left:20rpx;
+ margin-top: 20rpx;
 }

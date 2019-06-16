@@ -5,34 +5,41 @@
   </view>
 
 
-<view class="table" >
-  <view class="tr bg-w">
-    <view class="th">序号</view>
-    <view class="th">时间</view>
-    <view class="th ">地点</view>
-    <view class="th">总人数</view>
-    <view class="th">已预约</view>
-    <view class="th ">动作</view>
+ <block wx:for="{{appoint_list}}" wx:for-item="item"  wx:key="key" >
+  <view class="container_grip" >
+    <view class="list"> 
+      <text>时间:</text>
+      <text class="list-detail" >{{item.time}}</text>
+    </view>
+
+    <view  class="list">
+      <text>地点:</text>
+      <text class="list-detail">{{item.address}}</text>
+    </view>
+
+    <view  class="list">
+     <text>可预约人数:</text>
+     <text class="list-detail">{{item.appoint}}</text>
+    </view>
+
+    <view  class="list">
+     <text>已预约人数:</text>
+     <text class="list-detail">{{item.already_appoint}}</text>
+    </view>
+
+    <view wx:if="{{item.already_appoint_label == 1}}"  data-appointid="{{item.appointId}}" catchlongpress="longPressAppoint" >
+      <button class="button-appoint" type="primary" >预约</button>
+    </view>
+    <view wx:if="{{item.already_appoint_label == 0}}"  data-appointid="{{item.appointId}}" catchlongpress="longPressCancleAppoint">
+      <button class="button-appoint" type="warn"  >取消</button>
+    </view>
+
   </view>
-  <block wx:for="{{listData}}" wx:key="{{code}}">
-    <view class="tr bg-g" wx:if="{{index % 2 == 0}}">
-      <view class="td">{{item.code}}</view>
-      <view class="td">{{item.text}}</view>
-      <view class="td">{{item.type}}</view>
-      <view class="td">{{item.code}}</view>
-      <view class="td">{{item.text}}</view>
-      <view class="td"><image src="../../src/pic/plus.jpg"></image></view>
-    </view>
-    <view class="tr" wx:else>
-      <view class="td">{{item.code}}</view>
-      <view class="td">{{item.text}}</view>
-      <view class="td">{{item.type}}</view>
-      <view class="td">{{item.code}}</view>
-      <view class="td">{{item.text}}</view>
-      <view class="td"><image src="../../src/pic/plus.jpg"></image></view>
-    </view>
-  </block>
-</view>
+ </block>
+
+
+  
+
 
  
 </view>
